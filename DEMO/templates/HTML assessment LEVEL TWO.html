@@ -1,0 +1,38 @@
+{%extends "layout.html"%}
+{%block content%}
+  <head>
+    <meta charset="utf-8">
+    <title>Assessment Test</title>
+  </head>
+  <div class="container">
+    <h1>Course Sign Up Page</h1>
+    <form action="HTML LEVEL ONE ASSESMENT.html" method="get">
+      <p>Please note that First Name, Last name, Email and Password are required.</p>
+      <p><label for = "userinput">First Name:</label>
+      <input id="userinput" type="text" name="first" placeholder="First Name" required>
+      <label for ="userinput">Second Name:</label>
+      <input id="userinput" type="text" name="second" placeholder="Second Name" required>
+    </p>
+    <p>  <label  for="emailpass"> Email:</label>
+      <input id="emailpass" type="email" name="emailid" placeholder="abc@xyz.com" required>
+        <label for="Password">Password:</label>
+      <input id="Password" type="password" placeholder="*******" required>
+    </p>
+    <p>Are you over 18?</p>
+    <p>
+    <label for="Yes">Yes:</label>
+    <input id="Yes" type="radio" name="dot" value="yes" >
+    <label for="No">No:</label>
+    <input id="No" type="radio" name="dot" value="no" >
+  </p>
+  <p>Do you have Paypal or Credit Card?</p>
+  <p>
+    <select name="payment">
+      <option value="Credit">Credit card</option>
+      <option value="paypal">Paypal</option>
+    </select>
+  </p>
+    <input type="submit" name="clicked" value="Sign Up">
+    </form>
+  </div>
+{%endblock%}
